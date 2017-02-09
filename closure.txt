@@ -1,10 +1,10 @@
 1. What is "closure"?
-"Closure" is a function, which can refer to local variavles not copy. 
+"Closure" is a function, which can refer to local variables not copy. 
 
 2. How "closure" works?
 There are three features "closure" can do:
  1."Closure" can refer to itself.
- 2."Closure" can refer to outside variavles in a scope that it belongs.
+ 2."Closure" can refer to outside variables in a scope that it belongs.
  3."Closure" can refer to global variables.
  Unlike other most common languages, we can access local variables after 
  the function. In other words, local variables are not destroyed after calling.
@@ -23,9 +23,9 @@ return output();
 
 showWorks("Outer", "Variables");// I can access Outer Variables
  
-3. Advantages to use "closure" in our code.
+3. Advantages to using "closure" in our code.
  1. We can make a code short.
- 2. We can store variables in each "closure" and use them only where necesarry.
+ 2. We can store variables in each "closure" and use them only where necessary.
  
 4. When should we use "closure"?
 "Closure" is often used 
