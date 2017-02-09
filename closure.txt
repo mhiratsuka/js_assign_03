@@ -1,0 +1,44 @@
+1. What is "closure"?
+"Closure" is a function, which can refer to local variavles not copy. 
+
+2. How "closure" works?
+There are three features "closure" can do:
+ 1."Closure" can refer to itself.
+ 2."Closure" can refer to outside variavles in a scope that it belongs.
+ 3."Closure" can refer to global variables.
+ Unlike other most common languages, we can access local variables after 
+ the function. In other words, local variables are not destroyed after calling.
+ 
+ 
+For example:
+function showworks(where, who){
+let closureWork = "I can access";
+
+function output(){
+return closureWork + where + " " + who;
+}
+
+return output();
+}
+
+showWorks("Outer", "Variables");// I can access Outer Variables
+ 
+3. Advantages to use "closure" in our code.
+ 1. We can make a code short.
+ 2. We can store variables in each "closure" and use them only where necesarry.
+ 
+4. When should we use "closure"?
+"Closure" is often used 
+
+reference:
+1.Closures (Mozilla Developer Network)
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+2.Understand JavaScript Closures With Ease(blog)
+http://javascriptissexy.com/understand-javascript-closures-with-ease/
+3. JavaScript Closures 101: What is a closure?(Youtube video)
+https://www.youtube.com/watch?v=yiEeiMN2Khs
+4. JavaScript Closures 101- they're not magic(in Javascript Kit)
+http://www.javascriptkit.com/javatutors/closures.shtml
+5.Why use "closure"?(HOW TO NODE)
+https://howtonode.org/why-use-closure
+
